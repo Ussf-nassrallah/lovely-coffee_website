@@ -1,0 +1,44 @@
+.testimoniels {
+  .container {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1rem;
+
+      .wrap {
+        display: flex;
+        flex-direction: column;
+
+        p { color: $dark-color; }
+
+        div + div {
+          margin-top: 1rem;
+        }
+
+        img { width: 25%; }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .testimoniels {
+    .container {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+
+        .wrap {
+          flex-direction: row;
+
+          div + div {
+            margin-top: 0;
+            margin-left: 1rem;
+          }
+
+          img { min-width: 60px; }
+        }
+      }
+    }
+  }
+}

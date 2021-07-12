@@ -1,0 +1,31 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+
+  div + div {
+    margin-top: 2rem;
+  } 
+}
+
+@media (min-width: 768px) {
+  .flex {
+    flex-direction: row;
+    align-items: center;
+
+    div {
+      flex-basis: 100%;
+    }
+
+    div + div {
+      margin-top: 0 !important;
+      margin-left: 3rem;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body { font-family: $main-font; }
+
+body {
+  font-size: $fs-sm;
+  background-color: $white-color;
+}
+
+ul { list-style: none; }
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+section {
+  padding: 4rem 0;
+}

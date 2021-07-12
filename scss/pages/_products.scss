@@ -1,0 +1,37 @@
+.products {
+  h2 { margin-bottom: 4rem; }
+
+  .flex div + div {
+    margin-left: 0;
+  }
+  
+  .product {
+    h3 { margin: 1rem 0; }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    .product-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      img {
+        max-width: 200px;
+      }
+    }
+
+    .product-img::before {
+      content: "";
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background-color: $primary-color;
+      border-radius: 50%;
+      z-index: -1;
+    }
+  }
+}

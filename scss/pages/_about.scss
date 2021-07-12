@@ -1,0 +1,47 @@
+.bg-light {
+  background-color:$light-color;
+
+  .container {
+    margin-top: 5rem;
+  }
+}
+
+.gallery {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 300px;
+    gap: 1rem;
+
+    .card-tall{
+      grid-row: span 2 / auto;
+    }
+
+    .img {
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .bck-1 {
+      background-image: url("../assets/gallery/bck-1.jpg");
+    }
+
+    .bck-2 {
+      background-image: url("../assets/gallery/bck-2.jpg");
+    }
+
+    .bck-3 {
+      background-image: url("../assets/gallery/bck-3.jpg");
+    }
+
+    .bck-4 {
+      background-image: url("../assets/gallery/bck-4.jpg");
+    }
+
+    .bck-5 {
+      background-image: url("../assets/gallery/bck-5.jpg");
+    }
+  }
+}

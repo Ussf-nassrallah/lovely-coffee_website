@@ -1,0 +1,39 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  text-transform: capitalize;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  color: $dark-color;
+  font-weight: $fw-b;
+}
+
+h1 {
+  color: $white-color;
+  font-size: $fs-lg;
+  font-weight: $fw-md;
+}
+
+h2 {
+  font-size: $fs-md;
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: $lh-v;
+  color: $darkGrey-color;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  h1 { font-size: $fs-ld-lg; }
+
+  h2 { font-size: $fs-ld-md; }
+}
